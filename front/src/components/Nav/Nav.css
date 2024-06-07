@@ -1,0 +1,87 @@
+.navbar{
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-evenly;;
+    align-items: center;
+    
+
+}
+.navbar .logo{
+    width: 150px;
+
+}
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    font-weight: 800;
+    gap:100px;
+    color:rgb(234, 48, 172) ;
+    font-size: 22px;
+}
+.navbar button{
+    background: transparent;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(171, 39, 124);
+    border:3px solid rgb(234, 48, 172);
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.navbar button:hover{
+        background-color: rgb(232, 169, 255);
+}
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom:2px solid rgb(190, 61, 183) ;
+}
+.navbar li{
+    cursor: pointer;
+}
+@media(max-width:1050px) {
+    .navbar .logo{
+        width:140px;
+    }
+    .navbar-menu{
+        gap:20px;
+        font-size: 17px;
+    }
+  .navbar-right button{
+    padding: 8px 25px;
+  }
+  .navbar-right{
+    gap:20px;
+}
+
+    
+}
+
+@media(max-width:900px) {
+    .navbar .logo{
+        width:120px;
+    }
+    .navbar-menu{
+        gap:15px;
+        font-size: 16px;
+    }
+    .navbar-right{
+        gap:20px;
+    }
+  .navbar-right button{
+    padding: 7px 20px;
+    font-size: 15px;
+  }
+
+    
+}
+
+@media(max-width:900px) {
+   
+    .navbar-menu{
+       display:none;
+    }
+    
+
+    
+}
+

@@ -1,0 +1,57 @@
+.header{
+    height: 34vw;
+    margin: 10px auto;
+    background: url('/hey.png') no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 1900px;
+    height: 700px;
+}
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap:1.5vw;
+    bottom: 10%;
+    left:2vw;
+}
+.header-contents h2{
+    font-weight: 500;
+    color: rgb(252, 154, 208);
+    font-size: max(4.5vw,22px);
+}
+.header-contents p{
+    color:rgb(11, 11, 0);
+    font-size: 1vw;
+}
+.header-contents button{
+    border: none;
+    color: rgb(159, 104, 148);
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: rgb(253, 241, 252);
+    font-size: max(1vw,13px);
+    border-radius: 50px;
+
+}
+@media(max-width:1050px){
+    
+    .header-contents{
+        max-width: 45%;
+    }
+}
+
+@media(max-width:750px){
+   
+    .header-contents{
+        max-width: 65%;
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+}

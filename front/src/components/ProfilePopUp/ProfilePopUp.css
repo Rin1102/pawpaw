@@ -1,0 +1,41 @@
+.profile-popup {
+    position: relative; 
+    z-index: 9999;
+  }
+  
+  .profile-popup-container {
+    display: block; /* Initially hide popup container */
+    position: absolute;
+    top: calc(100% + 5px); /* Position the popup below the user icon */
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+  }
+  
+  
+  .profile-popup-items {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-popup-item {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    cursor: pointer;
+  }
+  .profile-popup-item  img {
+    width: 30px;
+    height: 30px;
+    padding-right: 3px;
+  }
+  
+  .divider {
+    height: 1px;
+    background-color: #ccc;
+    margin: 5px 0;
+  }
+  
